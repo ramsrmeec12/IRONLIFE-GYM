@@ -17,7 +17,7 @@ function Navbar() {
             Home
           </Link>
           <Link 
-            to="/location" 
+            to="/" 
             className="hover:text-red-500 transition duration-300 ease-in-out"
           >
             Location
