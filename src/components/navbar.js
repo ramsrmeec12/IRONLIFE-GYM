@@ -3,9 +3,9 @@ import logo from '../assets/logo.png';
 
 function Navbar() {
   return (
-    <div className="flex items-center justify-between p-4 bg-black text-white sticky top-0 z-50 shadow-lg">
+    <div className="flex items-center justify-between p-3 bg-black text-white sticky top-0 z-50 shadow-lg">
       {/* Logo */}
-      <img src={logo} className="h-8" alt="Logo" />
+      <img src={logo} className="h-8 hover:border borderred" alt="Logo" />
 
       {/* Navigation Links and Login Button */}
       <div className="flex gap-6 items-center text-lg">
