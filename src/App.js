@@ -6,7 +6,7 @@ import Home from './components/home';
 
 function App() {
   return (
-    <div className='mx-auto px-2'>
+    <div className='mx-auto '>
       <BrowserRouter>
       <Navbar></Navbar>
       <Routes>
