@@ -15,7 +15,7 @@ function Navbar() {
         >
           Home
         </Link>
-        <Link 
+        <Link
           to="https://maps.app.goo.gl/hZZc46oWTtPPgJyf8" 
           target="_blank" 
           className="hover:text-red-500 transition duration-300 ease-in-out"
