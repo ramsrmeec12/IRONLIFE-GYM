@@ -36,7 +36,7 @@ Need 1 Day Free Trial: ${formData.freeTrial}\n
 Membership Package: ${formData.membershipPackage}\n
 I accept the Terms & Conditions: ${formData.termsAccepted ? 'Yes' : 'No'}`;
 
-    const whatsappURL = `https://wa.me/9840856756?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/6385706756?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
   };
 
