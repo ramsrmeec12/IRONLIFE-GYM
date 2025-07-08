@@ -7,6 +7,9 @@ function MembershipForm() {
     name: '',
     email: '',
     contact: '',
+    dateOfJoining: '',
+    freeTrial: '',
+    membershipPackage: '',
     termsAccepted: false,
   });
 
@@ -28,11 +31,12 @@ Program: ${formData.club}\n
 Name: ${formData.name}\n
 Email: ${formData.email}\n
 Contact Number: ${formData.contact}\n
+Tentative Date of Joining: ${formData.dateOfJoining}\n
+Need 1 Day Free Trial: ${formData.freeTrial}\n
+Membership Package: ${formData.membershipPackage}\n
 I accept the Terms & Conditions: ${formData.termsAccepted ? 'Yes' : 'No'}`;
 
-    const whatsappURL = `https://wa.me/9025416751?text=${encodeURIComponent(message)}`;
-
-    // Redirect to WhatsApp with the formatted message
+    const whatsappURL = `https://wa.me/9840856756?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
   };
 
@@ -129,6 +133,62 @@ I accept the Terms & Conditions: ${formData.termsAccepted ? 'Yes' : 'No'}`;
             placeholder="e.g. 12345"
             className="w-full px-3 py-2 border border-gray-300 rounded-md"
           />
+        </div>
+
+        {/* Tentative Date of Joining */}
+        <div>
+          <label htmlFor="dateOfJoining" className="block text-sm font-medium text-gray-600">
+            Tentative Date of Joining *
+          </label>
+          <input
+            type="date"
+            name="dateOfJoining"
+            id="dateOfJoining"
+            value={formData.dateOfJoining}
+            onChange={handleChange}
+            required
+            className="w-full px-3 py-2 border border-gray-300 rounded-md"
+          />
+        </div>
+
+        {/* Free Trial */}
+        <div>
+          <label htmlFor="freeTrial" className="block text-sm font-medium text-gray-600">
+            Need 1 Day Free Trial? *
+          </label>
+          <select
+            name="freeTrial"
+            id="freeTrial"
+            value={formData.freeTrial}
+            onChange={handleChange}
+            required
+            className="w-full px-3 py-2 border border-gray-300 rounded-md"
+          >
+            <option value="">Select Option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        {/* Membership Package */}
+        <div>
+          <label htmlFor="membershipPackage" className="block text-sm font-medium text-gray-600">
+            Membership Package *
+          </label>
+          <select
+            name="membershipPackage"
+            id="membershipPackage"
+            value={formData.membershipPackage}
+            onChange={handleChange}
+            required
+            className="w-full px-3 py-2 border border-gray-300 rounded-md"
+          >
+            <option value="">Select Package</option>
+            <option value="1 Month">1 Month</option>
+            <option value="3 Months">3 Months</option>
+            <option value="6 Months">6 Months</option>
+            <option value="1 Year">1 Year</option>
+          </select>
         </div>
 
         {/* Terms & Conditions */}
