@@ -3,6 +3,7 @@ import './App.css';
 import Login from './components/Login';
 import Navbar from './components/navbar';
 import Home from './components/home';
+import TermsAndConditions from './components/termsandcond';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path='' element={<Home></Home>}></Route>
       <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/Login' element={<Login></Login>}></Route>
+        <Route path='/terms' element={<TermsAndConditions></TermsAndConditions>}></Route>
         
       </Routes>
       </BrowserRouter>
