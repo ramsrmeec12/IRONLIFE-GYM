@@ -4,19 +4,20 @@ import Login from './components/Login';
 import Navbar from './components/navbar';
 import Home from './components/home';
 import TermsAndConditions from './components/termsandcond';
+import BlockedRoutesPage from './pages/Blockedroutes';
 
 function App() {
   return (
     <div className='mx-auto '>
       <BrowserRouter>
-      <Navbar></Navbar>
-      <Routes>
-      <Route path='' element={<Home></Home>}></Route>
-      <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/Login' element={<Login></Login>}></Route>
-        <Route path='/terms' element={<TermsAndConditions></TermsAndConditions>}></Route>
-        
-      </Routes>
+        {/* <Navbar></Navbar> */}
+        <Routes>
+          <Route path='' element={<BlockedRoutesPage></BlockedRoutesPage>}></Route>
+          {/* <Route path='/home' element={<Home></Home>}></Route>
+          <Route path='/Login' element={<Login></Login>}></Route>
+          <Route path='/terms' element={<TermsAndConditions></TermsAndConditions>}></Route> */}
+
+        </Routes>
       </BrowserRouter>
     </div>
   );
