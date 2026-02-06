@@ -10,13 +10,13 @@ function App() {
   return (
     <div className='mx-auto '>
       <BrowserRouter>
-        {/* <Navbar></Navbar> */}
+        <Navbar></Navbar>
         <Routes>
-          <Route path='' element={<BlockedRoutesPage></BlockedRoutesPage>}></Route>
-          {/* <Route path='/home' element={<Home></Home>}></Route>
+          {/* <Route path='' element={<BlockedRoutesPage></BlockedRoutesPage>}></Route> */}
+          <Route path='/home' element={<Home></Home>}></Route>
+          <Route path='/' element={<Home></Home>}></Route>
           <Route path='/Login' element={<Login></Login>}></Route>
-          <Route path='/terms' element={<TermsAndConditions></TermsAndConditions>}></Route> */}
-
+          <Route path='/terms' element={<TermsAndConditions></TermsAndConditions>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
