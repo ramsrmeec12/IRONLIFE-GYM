@@ -4,7 +4,7 @@ import Login from './components/Login';
 import Navbar from './components/navbar';
 import Home from './components/home';
 import TermsAndConditions from './components/termsandcond';
-import BlockedRoutesPage from './pages/Blockedroutes';
+
 
 function App() {
   return (
