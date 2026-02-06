@@ -12,7 +12,6 @@ function App() {
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
-          {/* <Route path='' element={<BlockedRoutesPage></BlockedRoutesPage>}></Route> */}
           <Route path='/home' element={<Home></Home>}></Route>
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/Login' element={<Login></Login>}></Route>
